@@ -1,6 +1,7 @@
 <template>
   <MainHeader />
   <GetPosts :wpPosts="posts" />
+  <router-view />
   <MainFooter />
 </template>
 
