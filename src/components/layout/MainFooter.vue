@@ -1,10 +1,14 @@
 <template>
-    {{ appName }}
+    &copy;{{ footerText }}
 </template>
 
 <script>
 export default {
-  props: ['appName']
+  data() {
+    return {
+      footerText: 'Copyright 2023 - Vue Testing'
+    }
+  }
 }
 </script>
 
