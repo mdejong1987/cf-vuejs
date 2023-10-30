@@ -1,22 +1,24 @@
 <template>
-  {{ bericht }}
   <MainHeader />
   <MainNavigation />
+  <MainFooter :appName="footerText" />
 </template>
 
 <script>
 import MainHeader from './components/layout/MainHeader.vue'
 import MainNavigation from './components/layout/MainNavigation.vue'
+import MainFooter from './components/layout/MainFooter.vue'
 
 export default {
   name: 'App',
   components: {
     MainHeader,
-    MainNavigation
+    MainNavigation,
+    MainFooter
   },
   data() {
     return {
-      bericht: 'App.vue'
+      footerText: 'Copyright 2023 - Vue JS Testing'
     }
   }
 }
