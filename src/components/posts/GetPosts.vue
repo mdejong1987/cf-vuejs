@@ -1,6 +1,8 @@
 <template>
-    <h1>Posts</h1>
-    <div v-for="post in wpPosts" v-bind:key="post.id">
+    {{ wpPosts.status }}
+    {{ wpPosts.type }}
+
+    <div v-for="post in wpPosts" v-bind:key="post.id" class="animate__animated animate__fadeIn">
         <h2>{{ post.title.rendered }}</h2>
         <div v-html="post.excerpt.rendered"></div>
     </div>
