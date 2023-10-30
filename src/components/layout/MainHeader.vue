@@ -1,10 +1,16 @@
 <template>
-    <h1>MainHeader</h1>
+    <a href="/">Logo</a>
+    <MainNavigation />
 </template>
 
 <script>
+    import MainNavigation from '@/components/layout/MainNavigation.vue'
+
     export default {
-        name: 'MainHeader'
+        name: 'MainHeader',
+        components: {
+            MainNavigation
+        }
     }
 </script>
 
