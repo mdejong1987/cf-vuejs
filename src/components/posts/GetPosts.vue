@@ -1,6 +1,9 @@
 <template>
     <h1>Posts</h1>
-    {{ wpPosts }}
+    <div v-for="post in wpPosts" v-bind:key="post.id">
+        <h2>{{ post.title.rendered }}</h2>
+        <div v-html="post.excerpt.rendered"></div>
+    </div>
 </template>
 
 <script>
