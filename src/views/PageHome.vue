@@ -1,13 +1,12 @@
 <template>
-    <h1>Home</h1>
-    <GetPosts :wpPosts="posts" />
+  <h1>Home</h1>
+  <GetPosts :wpPosts="posts" />
 </template>
   
-  <script>
+<script>
   import GetPosts from '@/components/posts/GetPosts.vue'
   
   export default {
-    name: 'App',
     components: {
       GetPosts
     },
@@ -30,9 +29,4 @@
       this.getPosts();
     }
   }
-  </script>
-  
-  <style>
-  
-  </style>
-  
+</script>

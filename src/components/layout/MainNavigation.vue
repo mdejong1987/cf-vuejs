@@ -6,13 +6,3 @@
         <li><router-link to="/contact">Contact</router-link></li>
     </ul>
 </template>
-
-<script>
-    export default {
-        name: 'MainNavigation'
-    }
-</script>
-
-<style scoped>
-
-</style>

@@ -12,10 +12,6 @@
 <script>
   export default {
     name: 'GetPosts',
-    props: ['wpPosts'],
-    data() {
-      return {
-      }
-    },
+    props: ['wpPosts']
   }
 </script>
