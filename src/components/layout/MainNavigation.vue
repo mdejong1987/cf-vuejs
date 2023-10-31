@@ -1,8 +1,10 @@
 <template>
-    <ul>
-        <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/about">About</router-link></li>
-        <li><router-link to="/portfolio">Portfolio</router-link></li>
-        <li><router-link to="/contact">Contact</router-link></li>
-    </ul>
+    <div class="navbar-menu">
+        <div class="navbar-start">
+            <router-link to="/" class="navbar-item">Home</router-link>
+            <router-link to="/about" class="navbar-item">About</router-link>
+            <router-link to="/portfolio" class="navbar-item">Portfolio</router-link>
+            <router-link to="/contact" class="navbar-item">Contact</router-link>
+        </div>
+    </div>
 </template>

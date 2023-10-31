@@ -1,5 +1,11 @@
 <template>
-    &copy;{{ footerText }}
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        &copy;{{ footerText }}
+      </p>
+    </div>
+  </footer>
 </template>
 
 <script>

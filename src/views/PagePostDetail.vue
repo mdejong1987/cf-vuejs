@@ -1,6 +1,8 @@
 <template>
+  <div class="content is-large">
     <h2>{{ post.title.rendered }}</h2>
     <div v-html="post.content.rendered"></div>
+  </div>
 </template>
 
 <script>
@@ -17,7 +19,7 @@ export default {
       try {
         let response = await fetch(`https://headless.collectr.nl/wp-json/wp/v2/posts/${id}`);
         this.post = await response.json();
-      } catch(error) {
+      } catch (error) {
         console.log(error);
       }
     }
@@ -28,6 +30,4 @@ export default {
 }
 </script>
 
-<style>
-
-</style>
+<style></style>
