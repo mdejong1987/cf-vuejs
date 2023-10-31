@@ -1,13 +1,14 @@
 <template>
-    <h1>test</h1>
-    {{ post }}
+    <h2>{{ post.title.rendered }}</h2>
+    <div v-html="post.content.rendered"></div>
 </template>
 
 <script>
 export default {
-  name: 'App',
+  name: 'PagePostDetail',
   data() {
     return {
+      id: this.$route.params.id,
       post: [],
     }
   },
@@ -15,14 +16,14 @@ export default {
     async getPost(id) {
       try {
         let response = await fetch(`https://headless.collectr.nl/wp-json/wp/v2/posts/${id}`);
-        this.posts = await response.json();
+        this.post = await response.json();
       } catch(error) {
         console.log(error);
       }
     }
   },
   created() {
-    this.getPost();
+    this.getPost(this.id);
   }
 }
 </script>
