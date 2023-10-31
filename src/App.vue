@@ -1,21 +1,20 @@
 <template>
   <MainHeader />
-  <GetPosts :wpPosts="posts" />
-  <router-view />
+  <div class="container">
+    <router-view />
+  </div>
   <MainFooter />
 </template>
 
 <script>
 import MainHeader from '@/components/layout/MainHeader.vue'
 import MainFooter from '@/components/layout/MainFooter.vue'
-import GetPosts from '@/components/posts/GetPosts.vue'
 
 export default {
   name: 'App',
   components: {
     MainHeader,
-    MainFooter,
-    GetPosts
+    MainFooter
   },
   data() {
     return {
