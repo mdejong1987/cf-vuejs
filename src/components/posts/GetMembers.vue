@@ -1,6 +1,4 @@
 <template>
-    <h2 class="title is-2">Members</h2>
-
     <div class="columns">
         <div v-for="member in wpMembers" :key="member.id" class="column">
             <div class="card">
@@ -26,7 +24,6 @@
                         </div>
                     </div>
                     <div class="content" v-html="member.content.rendered"></div>
-
                 </div>
             </div>
         </div>
