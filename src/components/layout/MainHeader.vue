@@ -8,7 +8,7 @@
         </div>
         <MainNavigation />
     </nav>
-    <section class="hero is-large is-info">
+    <section class="hero is-small is-info">
         <div class="hero-body">
             <p class="title">
                 Large hero
