@@ -16,7 +16,7 @@ export default {
     methods: {
         async getPage() {
             try {
-                let response = await fetch("https://headless.collectr.nl/wp-json/wp/v2/pages/47");
+                let response = await fetch("https://headless.collectr.nl/wp-json/wp/v2/pages/44");
                 this.page = await response.json();
             } catch (error) {
                 console.log(error);
