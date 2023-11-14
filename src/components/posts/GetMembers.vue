@@ -7,14 +7,16 @@
                     odio vitae elementum enim vitae ullamcorper suspendisse.</p>
             </div>
             <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
-                <li v-for="member in wpMembers" :key="member.id">
+                <li v-for="member in  wpMembers " :key="member.id">
                     <div class="flex items-center gap-x-6">
                         <img class="h-16 w-16 rounded-full" :src="member._embedded['wp:featuredmedia'][0].source_url"
                             alt="">
                         <div>
                             <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">{{ member.acf.name }}
                             </h3>
-                            <p class="text-sm font-semibold leading-6 text-indigo-600">{{ member.acf.email }}</p>
+                            <p class="text-sm font-semibold leading-6 text-indigo-600">
+                                <a v-bind:href="'mailto:' + member.acf.email">{{ member.acf.email }}</a>
+                            </p>
                         </div>
                     </div>
                 </li>
