@@ -55,7 +55,7 @@ export default {
   methods: {
     async getPosts() {
       try {
-        let response = await fetch("https://headless.collectr.nl/wp-json/wp/v2/posts");
+        let response = await fetch("https://headless.collectr.nl/wp-json/wp/v2/posts/?_embed");
         this.posts = await response.json();
       } catch (error) {
         console.log(error);
@@ -63,7 +63,7 @@ export default {
     },
     async getMembers() {
       try {
-        let response = await fetch("https://headless.collectr.nl/wp-json/wp/v2/member");
+        let response = await fetch("https://headless.collectr.nl/wp-json/wp/v2/member/?_embed");
         this.members = await response.json();
       } catch (error) {
         console.log(error);
