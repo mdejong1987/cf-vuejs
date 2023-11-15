@@ -1,26 +1,26 @@
 <template>
-    <div class="bg-white py-24 sm:py-32">
-        <div class="mx-auto grid xl:grid-cols-3">
-            <div class="max-w-2xl">
-                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our leadership</h2>
-                <p class="mt-6 text-lg leading-8 text-gray-600">Libero fames augue nisl porttitor nisi, quis. Id ac elit
-                    odio vitae elementum enim vitae ullamcorper suspendisse.</p>
+    <div class="container">
+        <div class="row">
+            <div class="col s4">
+                <h2>Meet our leadership</h2>
+                <p>Libero fames augue nisl porttitor nisi, quis. Id ac elitodio vitae elementum enim vitae ullamcorper
+                    suspendisse.</p>
             </div>
-            <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
-                <li v-for="member in  wpMembers " :key="member.id">
-                    <div class="flex items-center gap-x-6">
-                        <img class="h-16 w-16 rounded-full" :src="member._embedded['wp:featuredmedia'][0].source_url"
-                            alt="">
-                        <div>
-                            <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">{{ member.acf.name }}
-                            </h3>
-                            <p class="text-sm font-semibold leading-6 text-indigo-600">
+            <div class="col s8">
+                <div class="row">
+                    <div v-for="member in  wpMembers " :key="member.id" class="col s4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img :src="member._embedded['wp:featuredmedia'][0].source_url" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h3>{{ member.acf.name }}</h3>
                                 <a v-bind:href="'mailto:' + member.acf.email">{{ member.acf.email }}</a>
-                            </p>
+                            </div>
                         </div>
                     </div>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
     </div>
 </template>

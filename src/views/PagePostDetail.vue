@@ -1,5 +1,5 @@
 <template>
-  <div class="content is-large">
+  <div class="container">
     <h2>{{ post.title.rendered }}</h2>
     <div v-html="post.content.rendered"></div>
   </div>

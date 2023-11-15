@@ -1,7 +1,9 @@
 <template>
-    <div v-if="page.title">
-        <h2 class="title is-2">{{ page.title.rendered }}</h2>
-        <div v-html="page.content.rendered"></div>
+    <div class="container">
+        <div v-if="page.title">
+            <h2 class="title is-2">{{ page.title.rendered }}</h2>
+            <div v-html="page.content.rendered"></div>
+        </div>
     </div>
 </template>
 

@@ -15,8 +15,6 @@
                 {{ post.title.rendered }}
               </a>
             </h3>
-
-            <p v-html="post.excerpt.rendered"></p>
           </div>
         </div>
       </article>

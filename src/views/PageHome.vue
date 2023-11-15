@@ -7,33 +7,26 @@
     <GetMembers :wpMembers="members" />
   </section>
 
-  <section class="section content has-background-primary-dark">
-    <h2>Test</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero enim, suscipit at justo sit amet, lobortis
-      mollis eros. Nam ut viverra diam. Ut volutpat at erat aliquam pellentesque. Morbi vulputate pretium vestibulum.
-      Phasellus interdum eleifend lorem, ac rhoncus risus. Nunc vestibulum commodo mi vulputate semper. In nisl lectus,
-      rutrum nec rutrum sit amet, posuere eu urna. Nullam eget varius quam, sed pretium odio. Donec ex eros, tristique non
-      semper vitae, commodo in magna.
-    </p>
-  </section>
-
-  <div class="section">
-    <div class="level">
-      <div class="level-left">
-        <div class="level-item">
-          Test 1a
-        </div>
-        <div class="level-item">
-          Test 1b
-        </div>
+  <div class="container">
+    <section class="card blue-grey darken-1">
+      <div class="card-content white-text">
+        <h2>Test</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero enim, suscipit at justo sit amet,
+          lobortis
+          mollis eros. Nam ut viverra diam. Ut volutpat at erat aliquam pellentesque. Morbi vulputate pretium vestibulum.
+          Phasellus interdum eleifend lorem, ac rhoncus risus. Nunc vestibulum commodo mi vulputate semper. In nisl
+          lectus,
+          rutrum nec rutrum sit amet, posuere eu urna. Nullam eget varius quam, sed pretium odio. Donec ex eros, tristique
+          non
+          semper vitae, commodo in magna.
+        </p>
       </div>
-      <div class="level-right">
-        <div class="level-item">
-          Test2
-        </div>
+      <div class="card-action">
+        <a href="#">This is a link</a>
+        <a href="#">This is a link</a>
       </div>
-    </div>
+    </section>
   </div>
 </template>
   
