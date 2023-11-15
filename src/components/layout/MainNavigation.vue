@@ -17,12 +17,6 @@
     </div>
 </template>
 
-<style>
-.parallax-container {
-    height: 250px;
-}
-</style>
-
 <script>
 export default {
     data() {

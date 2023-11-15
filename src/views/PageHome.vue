@@ -10,8 +10,8 @@
   <div class="container">
     <section class="card blue-grey darken-1">
       <div class="card-content white-text">
-        <h2>Test</h2>
-        <p>
+        <h2 class="header">Test</h2>
+        <p class="flow-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero enim, suscipit at justo sit amet,
           lobortis
           mollis eros. Nam ut viverra diam. Ut volutpat at erat aliquam pellentesque. Morbi vulputate pretium vestibulum.
@@ -21,10 +21,6 @@
           non
           semper vitae, commodo in magna.
         </p>
-      </div>
-      <div class="card-action">
-        <a href="#">This is a link</a>
-        <a href="#">This is a link</a>
       </div>
     </section>
   </div>
