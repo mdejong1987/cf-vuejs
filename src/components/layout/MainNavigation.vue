@@ -1,23 +1,27 @@
 <template>
-    <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
-        <div class="flex items-center flex-shrink-0 text-white mr-6">
-            <a href="/">
-                <span class="font-semibold text-xl tracking-tight">Website Ding</span>
-            </a>
-        </div>
-        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-            <div class="text-normal lg:flex-grow">
-                <router-link to="/"
-                    class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">Home</router-link>
-                <div v-for="page in pages" :key="page.id">
-                    <router-link :to="`/${page.slug}`"
-                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">{{
-                            page.title.rendered }}</router-link>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="/" class="brand-logo">Logo</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><router-link to="/">Home</router-link></li>
+                        <li v-for="page in pages" :key="page.id">
+                            <router-link :to="`/${page.slug}`">{{ page.title.rendered
+                            }}</router-link>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 </template>
+
+<style>
+.parallax-container {
+    height: 250px;
+}
+</style>
 
 <script>
 export default {
@@ -29,7 +33,7 @@ export default {
     methods: {
         async getPages() {
             try {
-                let response = await fetch("https://headless.collectr.nl/wp-json/wp/v2/pages");
+                let response = await fetch("https://headless.collectr.nl/wp-json/wp/v2/pages/?_embed");
                 this.pages = await response.json();
             } catch (error) {
                 console.log(error);
