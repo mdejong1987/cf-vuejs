@@ -11,11 +11,11 @@
                     <div class="card-panel z-depth-1">
                         <div class="row valign-wrapper">
                             <div class="col s4">
-                                <img class="circle responsive-img" :src="member._embedded['wp:featuredmedia'][0].source_url"
+                                <img class="responsive-img" :src="member._embedded['wp:featuredmedia'][0].source_url"
                                     alt="">
                             </div>
                             <div class="col s8">
-                                <h3>{{ member.acf.name }}</h3>
+                                <h5>{{ member.acf.name }}</h5>
                                 <a v-bind:href="'mailto:' + member.acf.email">{{ member.acf.email }}</a>
                             </div>
                         </div>

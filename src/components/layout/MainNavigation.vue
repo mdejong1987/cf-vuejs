@@ -4,7 +4,8 @@
             <div class="nav-wrapper">
                 <div class="container">
                     <a href="/" class="brand-logo">Logo</a>
-                    <ul id="nav-mobile" class="right">
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <li><router-link to="/">Home</router-link></li>
                         <li v-for="page in pages" :key="page.id">
                             <router-link :to="`/${page.slug}`">{{ page.title.rendered
@@ -12,6 +13,13 @@
                         </li>
                     </ul>
                 </div>
+                <ul class="sidenav" id="mobile-demo">
+                    <li><router-link to="/">Home</router-link></li>
+                    <li v-for="page in pages" :key="page.id">
+                        <router-link :to="`/${page.slug}`">{{ page.title.rendered
+                        }}</router-link>
+                    </li>
+                </ul>
             </div>
         </nav>
     </div>

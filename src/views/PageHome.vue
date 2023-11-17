@@ -19,6 +19,66 @@
       </div>
     </section>
   </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <blockquote>
+          This is an example quotation that uses the blockquote tag.
+        </blockquote>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col s4">
+        <h3 class="header">Services</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a dolor non est sodales suscipit quis eu sapien.
+          Vestibulum a enim eu dolor convallis efficitur semper non dui.
+        </p>
+        <a class="waves-effect waves-light btn-large" href="#">Wave</a>
+      </div>
+      <div class="col s8">
+        <div class="row">
+          <div class="col s6">
+            <i class="large material-icons">backup</i>
+            <h4 class="header promo-caption">Service</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit.
+            </p>
+          </div>
+          <div class="col s6">
+            <i class="large material-icons">backup</i>
+            <h4 class="header promo-caption">Service</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s6">
+            <i class="large material-icons">backup</i>
+            <h4 class="header promo-caption">Service</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="col s6">
+            <i class="large material-icons">backup</i>
+            <h4 class="header promo-caption">Service</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
   
 <script>

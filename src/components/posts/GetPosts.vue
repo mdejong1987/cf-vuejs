@@ -10,11 +10,11 @@
           <div class="card-content">
             {{ formatDate(post.date) }}
 
-            <h3>
+            <h5>
               <a :href="`post/${post.id}`">
                 {{ post.title.rendered }}
               </a>
-            </h3>
+            </h5>
           </div>
         </div>
       </article>
