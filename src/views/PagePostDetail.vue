@@ -28,7 +28,7 @@ export default {
     this.getPost(this.slug);
   },
   mounted() {
-    document.title = this.post[0].title.rendered
+    document.title = this.post[0].title.rendered + ' | VueJS'
   }
 }
 </script>

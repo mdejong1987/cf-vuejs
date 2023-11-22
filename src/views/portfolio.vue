@@ -29,7 +29,7 @@ export default {
         this.getPage();
     },
     mounted() {
-        document.title = 'Portfolio'
+        document.title = 'Portfolio | VueJS'
     }
 }
 </script>

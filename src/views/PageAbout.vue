@@ -28,7 +28,7 @@ export default {
         this.getPage();
     },
     mounted() {
-        document.title = 'About'
+        document.title = 'About | VueJS'
     }
 }
 </script>

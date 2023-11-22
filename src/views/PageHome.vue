@@ -119,7 +119,7 @@ export default {
     this.getMembers();
   },
   mounted() {
-    document.title = 'Home'
+    document.title = 'Home | VueJS'
   }
 }
 </script>

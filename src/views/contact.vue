@@ -29,7 +29,7 @@ export default {
         this.getPage();
     },
     mounted() {
-        document.title = 'Contact'
+        document.title = 'Contact | VueJS'
     }
 }
 </script>
