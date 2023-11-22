@@ -27,6 +27,9 @@ export default {
     },
     created() {
         this.getPage();
+    },
+    mounted() {
+        document.title = 'Portfolio'
     }
 }
 </script>

@@ -117,6 +117,9 @@ export default {
   created() {
     this.getPosts();
     this.getMembers();
+  },
+  mounted() {
+    document.title = 'Home'
   }
 }
 </script>

@@ -26,6 +26,9 @@ export default {
     },
     created() {
         this.getPage();
+    },
+    mounted() {
+        document.title = 'About'
     }
 }
 </script>

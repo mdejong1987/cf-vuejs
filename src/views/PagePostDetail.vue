@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" v-if="post[0].title">
     <h2>{{ post[0].title.rendered }}</h2>
     <div v-html="post[0].content.rendered"></div>
   </div>
@@ -26,6 +26,9 @@ export default {
   },
   created() {
     this.getPost(this.slug);
+  },
+  mounted() {
+    document.title = this.post[0].title.rendered
   }
 }
 </script>
