@@ -1,22 +1,17 @@
 <template>
     <MainNavigation />
-    <div class="parallax-container">
-        <div class="parallax"><img v-bind:src="image"></div>
-    </div>
+    <PageBanner />
 </template>
 
 <script>
 import MainNavigation from '@/components/layout/MainNavigation.vue'
+import PageBanner from '@/components/layout/PageBanner.vue'
 import M from 'materialize-css'
 
 export default {
     components: {
-        MainNavigation
-    },
-    data: function () {
-        return {
-            image: 'images/parallax1.jpg'
-        }
+        MainNavigation,
+        PageBanner
     },
     mounted() {
         M.AutoInit()
