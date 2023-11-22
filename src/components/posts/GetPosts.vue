@@ -9,9 +9,9 @@
 
           <div class="card-content">
             {{ formatDate(post.date) }}
-
+            
             <h5>
-              <a :href="`post/${post.id}`">
+              <a :href="`post/${post.slug}`">
                 {{ post.title.rendered }}
               </a>
             </h5>

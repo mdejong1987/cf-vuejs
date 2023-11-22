@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <h2>{{ post.title.rendered }}</h2>
-    <div v-html="post.content.rendered"></div>
+    <h2>{{ post[0].title.rendered }}</h2>
+    <div v-html="post[0].content.rendered"></div>
   </div>
 </template>
 
@@ -10,14 +10,14 @@ export default {
   name: 'PagePostDetail',
   data() {
     return {
-      id: this.$route.params.id,
+      slug: this.$route.params.slug,
       post: [],
     }
   },
   methods: {
-    async getPost(id) {
+    async getPost(slug) {
       try {
-        let response = await fetch(`https://headless.collectr.nl/wp-json/wp/v2/posts/${id}`);
+        let response = await fetch(`https://headless.collectr.nl/wp-json/wp/v2/posts?slug=${slug}`);
         this.post = await response.json();
       } catch (error) {
         console.log(error);
@@ -25,7 +25,7 @@ export default {
     }
   },
   created() {
-    this.getPost(this.id);
+    this.getPost(this.slug);
   }
 }
 </script>

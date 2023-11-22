@@ -8,7 +8,7 @@ import TheContact from '@/views/contact.vue'
 const routes = [
     {path: '/', name: 'PageHome', component: PageHome},
     {path: '/about', name: 'PageAbout', component: PageAbout},
-    {path: '/post/:id', name: 'PagePostDetail', component: PagePostDetail},
+    {path: '/post/:slug', name: 'PagePostDetail', component: PagePostDetail},
     {path: '/portfolio', name: 'portfolio', component: ThePortfolio},
     {path: '/contact', name: 'contact', component: TheContact},
 ]
